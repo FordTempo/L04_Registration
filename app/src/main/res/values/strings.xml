@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">L04_Registration</string>
+    <string name="FullName">Name: </string>
+    <string name="Mobile">Mobile</string>
+    <string name="Tables">Tables</string>
+    <string name="Tablestype">Tables Type</string>
+    <string name="display_date">Date</string>
+    <string name="display_time">time</string>
+    <string name="display_reset">reset</string>
+    <string name="display_confirmation">confirmation</string>
+    <string name="Smoking">Smoking</string>
+    <string name="NonSmoking">Non-Smoking</string>
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFDFDD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Reservation"
+                    android:textColor="#383683"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/NameView"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/FullName"
+                        android:textColor="#383683"
+                        android:textSize="30dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/Editname"
+                        android:layout_width="289dp"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="Enter"
+                        android:inputType="text"
+                        android:textColor="#383683"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/MobileView"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/Mobile"
+                        android:textColor="#383683"
+                        android:textSize="30dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/MobileEdit"
+                        android:layout_width="289dp"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="No."
+                        android:inputType="phone"
+                        android:textColor="#383683"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TableView"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/Tables"
+                        android:textColor="#383683"
+                        android:textSize="30dp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/TableEdit"
+                        android:layout_width="289dp"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="How Many?"
+                        android:inputType="number"
+                        android:textColor="#383683"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner" />
+
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/buttonDisplayTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#C90E2C77"
+                                android:text="@string/display_time" />
+
+                            <Button
+                                android:id="@+id/ButtonDisplayDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#C90E2C77"
+                                android:text="@string/display_date" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/DateDisplay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="TextView"
+                                android:textColor="#C90E2C77"
+                                android:textSize="30dp" />
+
+                            <TextView
+                                android:id="@+id/TimeDisplay"
+                                android:layout_width="195dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="TextView"
+                                android:textColor="#C90E2C77"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/RadioGroupsmoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Smoking"
+                    android:layout_width="185dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#C0C0C0"
+                    android:text="@string/Smoking"
+                    android:textColor="#C90E2C77"
+                    android:textSize="25dp" />
+
+
+                <RadioButton
+                    android:id="@+id/NonSmoking"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#C0C0C0"
+                    android:text="@string/NonSmoking"
+                    android:textColor="#C90E2C77"
+                    android:textSize="25dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/toggleconfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#C90E2C77"
+                android:text="@string/display_confirmation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TabletypeView"
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/Tablestype"
+                    android:textColor="#383683"
+                    android:textSize="30dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/togglereset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#C90E2C77"
+                android:checked="false"
+                android:text="@string/display_reset" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
